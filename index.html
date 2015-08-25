@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema de Gestion</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="stylesheet/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheet/datatable/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="stylesheet/stylesheet.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="stylesheet/bootstrap/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="javascript/jquery.min.js"></script>
+	<script src="javascript/bootstrap/bootstrap.min.js"></script>
+	<script src="javascript/datatable/jquery.dataTables.min.js"></script>
+	<script src="javascript/javascript.js"></script>
+</head>
+<body>
+	<!-- navbar -->
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Sistemas de Gestion</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Stock<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="materia_prima.html">Materia Prima</a></li>
+							<li><a href="#">Produccion</a></li>
+							<li><a href="#">Productos Terminados</a></li>
+							<li><a href="#">Depositos</a></li>
+							<li><a href="#">Movimientos</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Compras<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ventas<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="factura.html">Generar Factura</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contabilidad<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<!-- <li><p class="navbar-text">Bienvenido Pepito Perez</p></li> -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+						<ul id="login-dp" class="dropdown-menu">
+							<li>
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+											<div class="form-group">
+												<input type="username" class="form-control" id="exampleInputEmail2" placeholder="Nombre de usuario" required>
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contrase&ntilde;a" required>
+											</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
+													</div>
+											</form>
+										</div>
+								 </div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+	<!-- navbar -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- sidebar -->
+			<div class="col-sm-3 col-md-2 sidebar">
+			</div> <!-- sidebar -->
+			<div class="col-sm-9 col-md-10 main">			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
