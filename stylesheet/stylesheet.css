@@ -1,3 +1,4 @@
+
 #login-dp{
     min-width: 250px;
     padding: 14px 14px 0;
@@ -21,4 +22,10 @@
 }
 #login-dp .form-group {
     margin-bottom: 10px;
+}
+
+#botones{
+        margin-left: 75%;
+        padding-bottom: 30px;
+        margin-top: 58%;
 }

@@ -170,11 +170,10 @@
 				<div class="form-group">
 					<label for="inputDireccion" class="col-sm-1  control-label">Direccion</label>
 					<div class="col-sm-11 " style="padding-left: 60px">
-						<textarea name="" id="input" class="form-control" rows="3"></textarea>
+						<textarea name="" id="input" class="form-control" rows="2"></textarea>
 					</div>
 				</div><!-- Direccion -->
 			</div>
-
 			<div class="col-sm-12 col-md-12" style="padding-top: 30px">
 				<form class="form-inline">
 				  <div class="form-group">
@@ -195,7 +194,7 @@
 			                <th>Codigo del Producto</th>
 			                <th>Producto</th>
 			                <th>Precio Unitario</th>
-			                <th>Precio Total</th>
+			                <th>IMPORTE</th>
 			                <th>Acciones</th>
 			            </tr>
 			        </thead>
@@ -208,8 +207,12 @@
 			                <th>120,000</th>
 			                <th>240,000</th>
 			                <th>
-			                	<button type="button" class="btn btn-xs btn-primary">Editar</button>
-			                	<button type="button" class="btn btn-xs btn-danger">Borrar</button>
+			                	<button type="button" class="btn btn-xs btn-primary">
+									<span class="glyphicon glyphicon-edit h"></span>
+			                	</button>
+			                	<button type="button" class="btn btn-xs btn-danger">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
 			                </th>
 			        	</tr>
 			        	<tr>
@@ -220,8 +223,12 @@
 			                <th>560,000</th>
 			                <th>1,120,000</th>
 			                <th>
-			                	<button type="button" class="btn btn-xs btn-primary">Editar</button>
-			                	<button type="button" class="btn btn-xs btn-danger">Borrar</button>
+			                	<button type="button" class="btn btn-xs btn-primary">
+									<span class="glyphicon glyphicon-edit h"></span>
+			                	</button>
+			                	<button type="button" class="btn btn-xs btn-danger">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
 			                </th>
 			        	</tr>
 			        	  	<tr>
@@ -232,13 +239,75 @@
 			                <th>5,580,120</th>
 			                <th>5,580,120</th>
 			                <th>
-			                	<button type="button" class="btn btn-xs btn-primary">Editar</button>
-			                	<button type="button" class="btn btn-xs btn-danger">Borrar</button>
+			                	<button type="button" class="btn btn-xs btn-primary">
+									<span class="glyphicon glyphicon-edit h"></span>
+			                	</button>
+			                	<button type="button" class="btn btn-xs btn-danger">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
 			                </th>
 			        	</tr>
 			        </tbody>
 			    </table>
 			</div>
+			<div class="col-md-offset-7">
+				<form >
+					<!-- sub_total -->
+						<div class="form-group">
+							<label for="inputsub_total" class="col-sm-3 control-label">Sub TOTAL</label>
+							<div class="col-sm-9" style="padding-bottom: 6px">
+								<div class="input-group">
+									<div class="input-group-addon">Gs.</div>
+									<input type="" class="form-control" placeholder="5,581,480" disabled>
+								</div>	
+							</div>
+						</div><!-- sub_total -->
+					<!-- Lugar -->
+						<div class="form-group">
+						<label for="inputnumero_de_factura" class="col-sm-3 control-label">Descuento</label>
+							<div class="col-sm-9" style="padding-bottom: 6px">
+								<div class="input-group">
+									<div class="input-group-addon">%</div>
+									<input type="" class="form-control" placeholder="0" disabled >
+								</div>
+							</div>
+						</div><!-- Lugar -->
+					<!-- sub_total -->
+						<div class="form-group">
+							<label for="inputsub_total" class="col-sm-3 control-label">Sub TOTAL</label>
+							<div class="col-sm-9" style="padding-bottom: 6px">
+								<div class="input-group">
+									<div class="input-group-addon">Gs</div>
+									<input type="" class="form-control" placeholder="5,581,480" disabled>
+								</div>
+							</div>
+						</div><!-- sub_total -->
+						<!-- IVA -->
+						<div class="form-group">
+							<label for="inputNombre" class="col-sm-3 control-label">IVA</label>
+							<div class="col-sm-9" style="padding-bottom: 6px">
+								<div class="input-group">
+									<div class="input-group-addon">Gs</div>
+									<input type="" class="form-control" placeholder="837,222" disabled>
+								</div>
+							</div>
+						</div> <!-- IVA -->
+						<!-- TOTAL -->
+						<div class="form-group">
+							<label for="inputNombre" class="col-sm-3 control-label">TOTAL</label>
+							<div class="col-sm-9" style="padding-bottom: 6px">
+							<div class="input-group">
+									<div class="input-group-addon">Gs</div>
+									<input type="" class="form-control" autofocus="autofocus" placeholder="6,418,702" disabled>
+								</div>
+							</div>
+						</div> <!-- TOTAL -->
+				</form>
+			</div>
+			<div id="botones" >
+				<button type="submit" class="btn btn-success">
+				Procesar</button>
+				<button type="submit" class="btn btn-danger">Cancelar</button>
 		</div>
 	</div>
 </body>
